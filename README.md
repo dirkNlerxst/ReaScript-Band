@@ -11,7 +11,7 @@ These are scripts to automate the process of converting songs from The Beatles: 
 
   •Ringo.lua: This takes all the drum animations from the RINGO track and moves them to the PART DRUMS track, and then delete the RINGO track. 
   
-  •PaulBASS.lua: This takes the left hand fret positions from PAUL and moves it to PART BASS, and then delete the PAUL track.
+  •PaulBASS.lua: This takes the left hand fret positions from PAUL and moves it to PART BASS, adds [map StrumMap_Pick], and then delete the PAUL track.
     
   •GeorgeGTR.lua: This takes the left hand fret positions from GEORGE and moves it to PART GUITAR. Next, it converts C/D/A chords to [map HandMap_C/D/A], and any other chords to [map HandMap_AllChords]. If there is a 1/4 note gap between chords, it will create a text event named [map HandMap_Default] a 1/16 note after the last chord. Finally it deletes the GEORGE track.
   
