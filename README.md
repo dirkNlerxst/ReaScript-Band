@@ -5,7 +5,7 @@ Full Disclosure: these scripts are being written by ChatGPT but I am trying my b
 
 While all scripts are built to have UNDO functionality, it may be wise to backup your MIDI/RPP data before using.
 
-#TBRB-to-RB-Scripts 
+# TBRB-to-RB-Scripts 
 
 These are scripts to automate the process of converting songs from The Beatles: Rock Band to Rock Band 2 format.
 
