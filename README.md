@@ -5,7 +5,9 @@ Full Disclosure: these scripts are being written by ChatGPT but I am trying my b
 
 While all scripts are built to have UNDO functionality, it may be wise to backup your MIDI/RPP data before using.
 
-TBRB-to-RB-Scripts: These are scripts to automate the process of converting songs from The Beatles: Rock Band to Rock Band 2 format.
+#TBRB-to-RB-Scripts 
+
+These are scripts to automate the process of converting songs from The Beatles: Rock Band to Rock Band 2 format.
 
   •Ringo.lua: This takes all the drum animations from the RINGO track and moves them to the PART DRUMS track, and then delete the RINGO track. 
   
