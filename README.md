@@ -15,7 +15,11 @@ These are scripts to automate the process of converting songs from The Beatles: 
 
 IMPORATANT: Your tracks MUST be named correctly or these will fail: 
 
-"PART DRUMS" "PART BASS" "PART GUITAR" "RINGO" "PAUL" "GEORGE" "JOHN" "PART HARM1" "PART HARM2" "PART HARM3"
+&nbsp;"PART DRUMS" "PART BASS" "PART GUITAR" 
+
+&nbsp;"RINGO" "PAUL" "GEORGE" "JOHN" 
+
+&nbsp;"PART HARM1" "PART HARM2" "PART HARM3"
 
 If it fails to find the track, make sure your tracks are named correctly.
 
@@ -24,19 +28,19 @@ If it fails to find the track, make sure your tracks are named correctly.
     2. Deletes RINGO track.<br> 
   
   •PaulBASS.lua:<br>
-    1. Moves left hand fret positions from PAUL to PART BASS.<br>
-    2. Adds [map StrumMap_Pick]<br>
-    3, Deletes PAUL track.<br>
+    &nbsp;1. Moves left hand fret positions from PAUL to PART BASS.<br>
+    &nbsp;2. Adds [map StrumMap_Pick]<br>
+    &nbsp;3, Deletes PAUL track.<br>
     
   •GeorgeGTR.lua & JohnGTR.lua:<br>
-    1. Moves left hand fret positions from GEORGE/JOHN and moves it to PART GUITAR.<br>
-    2. Converts C/D/A midi note chords to [map HandMap_C/D/A], and other chords to [map HandMap_AllChords].<br> 
-    3. If a 1/4 note gap between chords exists, creates a text event named [map HandMap_Default] a 1/16 note after the last chord.<br>
-    4. Deletes the GEORGE/JOHN track.<br>
+    &nbsp;1. Moves left hand fret positions from GEORGE/JOHN and moves it to PART GUITAR.<br>
+    &nbsp;2. Converts C/D/A midi note chords to [map HandMap_C/D/A], and other chords to [map HandMap_AllChords].<br> 
+    &nbsp;3. If a 1/4 note gap between chords exists, creates a text event named [map HandMap_Default] a 1/16 note after the last chord.<br>
+    &nbsp;4. Deletes the GEORGE/JOHN track.<br>
 
   •Part2Harms.lua:<br>
-    1. Renames Reaper tracks from "PART HARM1/2/3" to "HARM1/2/3".<br>
-    1. Renames midi track name from "PART HARM1/2/3" to "HARM1/2/3".<br>
-    Notes:<br>
-      -If your Reaper tracks are already named "HARM1/2/3", it will just rename the MIDI track names.<br> 
-      -Due to the way the lua script handles the MIDI rename it won't explicitly say "Undo MIDI track rename", but undoing twice should undo the MIDI track rename, and the Reaper track rename.<br>
+    &nbsp;1. Renames Reaper tracks from "PART HARM1/2/3" to "HARM1/2/3".<br>
+    &nbsp;1. Renames midi track name from "PART HARM1/2/3" to "HARM1/2/3".<br>
+    &nbsp;Notes:<br>
+      &nbsp;&nbsp;-If your Reaper tracks are already named "HARM1/2/3", it will just rename the MIDI track names.<br> 
+      &nbsp;&nbsp;-Due to the way the lua script handles the MIDI rename it won't explicitly say "Undo MIDI track rename", but undoing twice should undo the MIDI track rename, and the Reaper track rename.<br>
