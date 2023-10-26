@@ -13,14 +13,30 @@ Add .lua files to your ReaScripts folder (you can find this by going to Options 
 
 These are scripts to automate the process of converting songs from The Beatles: Rock Band to Rock Band 2 format.
 
-IMPORATANT: Your tracks MUST be named correctly or these will fail: "PART DRUMS" "PART BASS" "PART GUITAR" "RINGO" "PAUL" "GEORGE" "JOHN" "PART HARM1" "PART HARM2" "PART HARM3". If it fails to find the track, make sure your tracks are named correctly.
+IMPORATANT: Your tracks MUST be named correctly or these will fail: 
 
-  •Ringo.lua: This takes all the drum animations from the RINGO track and moves them to the PART DRUMS track, and then delete the RINGO track. 
+"PART DRUMS" "PART BASS" "PART GUITAR" "RINGO" "PAUL" "GEORGE" "JOHN" "PART HARM1" "PART HARM2" "PART HARM3"
+
+If it fails to find the track, make sure your tracks are named correctly.
+
+  •Ringo.lua: 
+    1. Moves drum animation from RINGO to PART DRUMS
+    2. Deletes RINGO track. 
   
-  •PaulBASS.lua: This takes the left hand fret positions from PAUL and moves it to PART BASS, adds [map StrumMap_Pick], and then delete the PAUL track.
+  •PaulBASS.lua: 
+    1. Moves left hand fret positions from PAUL to PART BASS.
+    2. Adds [map StrumMap_Pick]
+    3, Deletes PAUL track.
     
-  •GeorgeGTR.lua: This takes the left hand fret positions from GEORGE and moves it to PART GUITAR. Next, it converts C/D/A chords to [map HandMap_C/D/A], and any other chords to [map HandMap_AllChords]. If there is a 1/4 note gap between chords, it will create a text event named [map HandMap_Default] a 1/16 note after the last chord. Finally it deletes the GEORGE track.
-  
-  •JohnGTR.lua: See GeorgeGTR.lua
+  •GeorgeGTR.lua & JohnGTR.lua:
+    1. Moves left hand fret positions from GEORGE/JOHN and moves it to PART GUITAR. 
+    2. Converts C/D/A midi note chords to [map HandMap_C/D/A], and other chords to [map HandMap_AllChords]. 
+    3. If a 1/4 note gap between chords exists, creates a text event named [map HandMap_Default] a 1/16 note after the last chord.
+    4. Deletes the GEORGE/JOHN track.
 
-  •Part2Harms.lua: Renames the reaper track and the midi track of "PART HARM1/2/3" to "HARM1/2/3". If your Reaper tracks are already named "HARM1/2/3", it will just rename the MIDI track names. (Due to the way the lua script handles the MIDI rename it won't explicitly say "Undo MIDI track rename", but undoing twice should undo the MIDI track rename, and the Reaper track rename.)
+  •Part2Harms.lua: 
+    1. Renames Reaper tracks from "PART HARM1/2/3" to "HARM1/2/3".
+    1. Renames midi track name from "PART HARM1/2/3" to "HARM1/2/3". 
+    Notes: 
+      -If your Reaper tracks are already named "HARM1/2/3", it will just rename the MIDI track names. 
+      -Due to the way the lua script handles the MIDI rename it won't explicitly say "Undo MIDI track rename", but undoing twice should undo the MIDI track rename, and the Reaper track rename.
