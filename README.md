@@ -48,4 +48,4 @@ If it fails to find the track, make sure your tracks are named correctly.
 
 # RB3-Scripts
 
-  •LightingScrub.lua: Removes all lighting events except [first], [next], [prev]. This is intended to be used for RB3 Upgrades, as the game reads lighting from both the upgrade and the original file, with the exception of the keyframe events.
+  •UpgradeVenueScrub.lua: Removes all post-processing & lighting events except [first], [next], [prev]. This is intended to be used for RB3 Upgrades, as the game reads lighting/post-processing from both the upgrade and the original file, with the exception of the keyframe events.
