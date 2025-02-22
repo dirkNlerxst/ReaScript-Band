@@ -1,7 +1,7 @@
 # ReaScript-Band
 ReaScripts for automating Rock Band Customs. These are intended to aid with the authoring process and are not meant as a full replacement to authoring. You may still need to go in to make your own changes to ensure accuracy and finer artistic details are preserved.
 
-Full Disclosure: these scripts are being written by ChatGPT but I am trying my best to vet them and ensure the logic is sound. If you notice any problems please let me know. I know a little bit of Lua but am not a strong coder by any means. If efficiency or logic can be improved upon, please fork and make a pull request :)
+Full Disclosure: some of these scripts were aided by Claude.ai, but I am trying my best to vet them and ensure the logic is sound. I am still learning my way around lua. If efficiency or logic can be improved upon, please fork and make a pull request :)
 
 While all scripts are built to have UNDO functionality, it may be wise to backup your MIDI/RPP data before using.
 
@@ -45,3 +45,7 @@ If it fails to find the track, make sure your tracks are named correctly.
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-If your Reaper tracks are already named "HARM1/2/3", it will just rename the MIDI track names.<br> 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Due to the way the lua script handles the MIDI rename it won't explicitly say "Undo MIDI track rename",<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;but undoing twice should undo the MIDI track rename, and the Reaper track rename.<br>
+
+# RB3-Scripts
+
+  •LightingScrub.lua: Removes all lighting events except [first], [next], [prev]. This is intended to be used for RB3 Upgrades, as the game reads lighting from both the upgrade and the original file, with the exception of the keyframe events.
